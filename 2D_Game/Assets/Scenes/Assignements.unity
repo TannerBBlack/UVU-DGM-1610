@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  jumpHeight: 10
 --- !u!50 &416297712
 Rigidbody2D:
   serializedVersion: 4

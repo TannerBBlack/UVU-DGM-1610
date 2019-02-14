@@ -2,30 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinPickup : GenericPickup {
+// public class CoinPickup : GenericPickup {
 
-	public GameObject PC;
-
-
-
-	void OnTriggerEnter2D(Collider2D other){
-		if(other.name == "PC"){
-			// player collect coin
-
-		}
-		else{
-			// not player
-		}
-	}
+// 	public GameObject PC;
 
 
-	// Use this for initialization
-	void Start () {
+
+// 	void OnTriggerEnter2D(Collider2D other){
+// 		if(other.name == "PC"){
+// 			// player collect coin
+
+// 		}
+// 		else{
+// 			// not player
+// 		}
+// 	}
+
+
+// 	// Use this for initialization
+// 	void Start () {
 		
-	}
+// 	}
 	
-	// Update is called once per frame
-	void Update () {
+// 	// Update is called once per frame
+// 	void Update () {
 		
-	}
-}
+// 	}
+//}

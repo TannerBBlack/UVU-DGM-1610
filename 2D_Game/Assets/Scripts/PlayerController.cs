@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	public float moveSpeed; 
+	public float jumpHeight;
 
 
 	// Use this for initialization
@@ -20,6 +21,8 @@ public class PlayerController : MonoBehaviour {
 		else if(Input.GetKey(KeyCode.A)){
 			GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
-
+		else if(Input.GetKey(KeyCode.W)){
+			GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);
+		}
 	}
 }
