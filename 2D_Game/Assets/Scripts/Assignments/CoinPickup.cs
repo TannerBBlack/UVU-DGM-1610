@@ -2,30 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// public class CoinPickup : GenericPickup {
+public class CoinPickup : MonoBehaviour {
 
-// 	public GameObject PC;
+    public int coinValue;
 
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.name == "Player"){
 
-
-// 	void OnTriggerEnter2D(Collider2D other){
-// 		if(other.name == "PC"){
-// 			// player collect coin
-
-// 		}
-// 		else{
-// 			// not player
-// 		}
-// 	}
-
-
-// 	// Use this for initialization
-// 	void Start () {
-		
-// 	}
-	
-// 	// Update is called once per frame
-// 	void Update () {
-		
-// 	}
-//}
+            print("You've Collected A Coin!");
+            Destroy(gameObject);
+        }
+    }
+}
