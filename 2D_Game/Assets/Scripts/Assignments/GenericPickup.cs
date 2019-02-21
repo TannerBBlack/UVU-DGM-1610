@@ -5,7 +5,9 @@ using UnityEngine;
 public class GnericPickup : MonoBehaviour {
 
 	public bool isVisable;
-	public 
+	public int value;
+	public float timer;
+
 
 	// Use this for initialization
 	void Start () {
