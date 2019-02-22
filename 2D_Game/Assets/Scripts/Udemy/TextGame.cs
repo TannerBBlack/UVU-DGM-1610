@@ -6,10 +6,14 @@ using UnityEngine.UI;
 public class TextGame : MonoBehaviour {
 
     [SerializeField] Text textComponent;
+    [SerializeField] State startingState;
+
+    State state;
 
 	// Use this for initialization
 	void Start () {
-        textComponent.text = ("Learn to master the magic arts!");
+        state = startingState;
+        textComponent.text = state.GetStateStory();
 	}
 	
 	// Update is called once per frame
