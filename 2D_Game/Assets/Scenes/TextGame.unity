@@ -114,7 +114,11 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &153329428
+=======
+--- !u!1 &178042541
+>>>>>>> master
 =======
 --- !u!1 &178042541
 >>>>>>> master
@@ -125,8 +129,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 153329430}
   - component: {fileID: 153329429}
+=======
+  - component: {fileID: 178042543}
+  - component: {fileID: 178042542}
+>>>>>>> master
 =======
   - component: {fileID: 178042543}
   - component: {fileID: 178042542}
@@ -139,7 +148,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &153329429
+=======
+--- !u!114 &178042542
+>>>>>>> master
 =======
 --- !u!114 &178042542
 >>>>>>> master
@@ -147,6 +160,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 153329428}
   m_Enabled: 1
@@ -157,6 +171,8 @@ MonoBehaviour:
   textComponent: {fileID: 0}
 --- !u!4 &153329430
 =======
+=======
+>>>>>>> master
   m_GameObject: {fileID: 178042541}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -166,11 +182,15 @@ MonoBehaviour:
   textComponent: {fileID: 1395636420}
   startingState: {fileID: 11400000, guid: 2269a351257a99c4cba9abb89c81a808, type: 2}
 --- !u!4 &178042543
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 153329428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -180,6 +200,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
 =======
+=======
+>>>>>>> master
   m_GameObject: {fileID: 178042541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 148.77956, y: 32.57279, z: -2.3134704}
@@ -187,6 +209,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565266552
