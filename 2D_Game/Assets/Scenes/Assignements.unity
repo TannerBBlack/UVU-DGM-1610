@@ -5871,6 +5871,7 @@ GameObject:
   - component: {fileID: 2134673648}
   - component: {fileID: 2134673647}
   - component: {fileID: 2134673646}
+  - component: {fileID: 2134673649}
   m_Layer: 0
   m_Name: StopLightIfStatement
   m_TagString: Untagged
@@ -5889,8 +5890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec3809936fec5d4fbe296f08abcb93c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopLight: Green
-  isUtahn: 1
 --- !u!212 &2134673647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5950,3 +5949,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2134673649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2134673645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe0eabbb755c4b4b9c511f0edd070cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suspect: Mr. Radish
+  weapon: 
+  room: 
