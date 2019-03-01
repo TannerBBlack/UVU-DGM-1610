@@ -5960,6 +5960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe0eabbb755c4b4b9c511f0edd070cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  suspect: Mr. Radish
-  weapon: 
+  suspect: Mr. Bob
+  weapon: Rope
   room: 

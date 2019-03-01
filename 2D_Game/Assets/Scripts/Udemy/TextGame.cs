@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class TextGame : MonoBehaviour {
 
-    // [SerializeField] Text textComponent;
-    // [SerializeField] State startingState;
+     [SerializeField] Text textComponent;
+     [SerializeField] State startingState;
 
-    // State state;
+     State state;
 
-	// // Use this for initialization
-	// void Start () {
-    //     state = startingState;
-    //     textComponent.text = state.GetStateStory();
-	// }
+	 // Use this for initialization
+	 void Start () {
+         state = startingState;
+        // textComponent.text = state.GetStateStory();
+	 }
 	
-	// // Update is called once per frame
-	// void Update () {
+	 // Update is called once per frame
+	 void Update () {
 		
-	// }
+	 }
 }

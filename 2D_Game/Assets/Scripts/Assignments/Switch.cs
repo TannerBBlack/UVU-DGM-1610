@@ -14,7 +14,7 @@ public class Switch : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		MurderMystery(suspect);
+		MurderMystery(suspect, weapon);
 	}
 	
 	// Update is called once per frame
@@ -22,7 +22,7 @@ public class Switch : MonoBehaviour {
 		
 	}
 
-	void MurderMystery (string person){
+	void MurderMystery (string person, string weapon){
 		switch(suspect){
 			case "Mr. Ketchup": 
 			case "Mr. Radish":
@@ -34,10 +34,30 @@ public class Switch : MonoBehaviour {
 			case "Mrs. Mayo":
 				print ("I was in the kitchen cleaning up the dishes");
 			break;
+            case "Mr. Bob":
+                print("I wasn't even at the mansion...");
+                break;
+            case "Ms. Attractive":
+                print("I'm too attractive to murder people");
+                break;
 			default:
 				print("I am not familiar with "+suspect+"!");
 			break;
 		}
-
+        switch (weapon)
+        {
+            case "Gun":
+                print("Not used");
+                break;
+            case "Candlestick":
+                print("Not used");
+                break;
+            case "Rope":
+                print("Ouch! Gag!");
+                break;
+            default:
+                print("Not used for this murder");
+                break;
+        }
 	}
 }
