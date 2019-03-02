@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195bac9ed6aaec34c8dfbb0936f206d1, type: 3}
+  m_Name: A11
+  m_EditorClassIdentifier: 
+  storyText: "You charge the archer but you don't know what the battle plan was. Cavalry
+    comes charging through the battle field and you are directly in the way\r\n\r\n1.
+    Get run down by the cavalry"
+  nextStates:
+  - {fileID: 11400000, guid: 92ed2f8fa02f8914083782f1abaec472, type: 2}

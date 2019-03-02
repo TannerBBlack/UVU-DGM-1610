@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195bac9ed6aaec34c8dfbb0936f206d1, type: 3}
+  m_Name: A4
+  m_EditorClassIdentifier: 
+  storyText: "Now you're on the field. You're captain tells your squad to split up
+    for a hammer and anvil attack. What do you choose?\r\n\r\n1. Hammer group\r\n2.
+    Anvil group"
+  nextStates:
+  - {fileID: 11400000, guid: 5387d50c1821840409f55c9c99afb0f2, type: 2}
+  - {fileID: 11400000, guid: 03e6870ed01a4df449fcf67425f4dd0e, type: 2}

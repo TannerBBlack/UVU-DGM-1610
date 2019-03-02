@@ -5766,7 +5766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3a8d2143d9a132429916ddb8cf0cf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weather: Sunny
+  weather: 
 --- !u!1 &1898624455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5870,8 +5870,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2134673648}
   - component: {fileID: 2134673647}
-  - component: {fileID: 2134673646}
   - component: {fileID: 2134673649}
+  - component: {fileID: 2134673646}
   m_Layer: 0
   m_Name: StopLightIfStatement
   m_TagString: Untagged
@@ -5887,9 +5887,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2134673645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec3809936fec5d4fbe296f08abcb93c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9efcda1d227e356458a3a247451f12b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightColor: Green
+  isUtahn: 0
 --- !u!212 &2134673647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5960,6 +5962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe0eabbb755c4b4b9c511f0edd070cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  suspect: Mr. Bob
-  weapon: Rope
+  suspect: 
+  weapon: 
   room: 

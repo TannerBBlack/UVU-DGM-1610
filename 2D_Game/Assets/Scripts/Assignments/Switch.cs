@@ -14,7 +14,7 @@ public class Switch : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		MurderMystery(suspect, weapon);
+		MurderMystery(suspect, weapon, room);
 	}
 	
 	// Update is called once per frame
@@ -22,7 +22,7 @@ public class Switch : MonoBehaviour {
 		
 	}
 
-	void MurderMystery (string person, string weapon){
+	void MurderMystery (string person, string weapon, string room){
 		switch(suspect){
 			case "Mr. Ketchup": 
 			case "Mr. Radish":
@@ -47,16 +47,39 @@ public class Switch : MonoBehaviour {
         switch (weapon)
         {
             case "Gun":
-                print("Not used");
+                print("we're in England. they don't have guns here");
                 break;
             case "Candlestick":
-                print("Not used");
+                print("Not heavy enough");
                 break;
             case "Rope":
                 print("Ouch! Gag!");
                 break;
+            case "Metal Pipe":
+                print("that's stuck under the sink");
+                break;
+            case "Smoking Pipe":
+                print("More likely to die from cancer than murder");
+                break;
+            case "Wrench":
+            case "Bo Staff":
+                print("could have been used...");
+                break;
             default:
                 print("Not used for this murder");
+                break;
+        }
+        switch (room)
+        {
+            case "Dinning Room":
+                print("blood stains on the carpet");
+                break;
+            case "Utility Closet":
+            case "Bedroom":
+                print("these doors were locked");
+                break;
+            default:
+                print("looks clean here");
                 break;
         }
 	}

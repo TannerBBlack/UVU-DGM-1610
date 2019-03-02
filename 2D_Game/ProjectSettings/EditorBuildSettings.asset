@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Assignements.unity
     guid: 004504d2b08cebe49b3203fb44acd673
   - enabled: 1

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195bac9ed6aaec34c8dfbb0936f206d1, type: 3}
+  m_Name: A1
+  m_EditorClassIdentifier: 
+  storyText: "I hear yelling and the clamor of battle. I've already seen other squads
+    charge over the hill into battle. Soon it will be my squad's turn. I grip my sword
+    a bit tighter. Am I ready for this? \r\nAs I ponder my heart freezes when I hear
+    screams from the other side of the hill. It sounds like the last squad didn't
+    do too well. \r\n\r\nWhat do I do?\r\n1. Try to sneak away from the battle\r\n2.
+    Check my equipment to make sure I'm ready to fight"
+  nextStates:
+  - {fileID: 11400000, guid: 857b9eced655d0a48acf334ae9e1a694, type: 2}
+  - {fileID: 11400000, guid: 044f7be092cb9e6499c2e228d8c649b9, type: 2}

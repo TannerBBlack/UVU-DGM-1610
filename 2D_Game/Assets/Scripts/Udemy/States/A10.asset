@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195bac9ed6aaec34c8dfbb0936f206d1, type: 3}
+  m_Name: A10
+  m_EditorClassIdentifier: 
+  storyText: "You stay alert and notice an archer in the distance. you're able to
+    block the arrow that he shoots at you with your shield. \r\n\r\n1. Charge the
+    archer\r\n2. wait for someone else to take care of him"
+  nextStates:
+  - {fileID: 11400000, guid: 2769f021c0a2d7c48a54c181a06822b6, type: 2}
+  - {fileID: 11400000, guid: 997482dd6d734624db0661d4a88f5ce4, type: 2}

@@ -9,6 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 195bac9ed6aaec34c8dfbb0936f206d1, type: 3}
-  m_Name: StartingState
+  m_Name: A8
   m_EditorClassIdentifier: 
-  storyText: 
+  storyText: "You open up your canteen to drink some water and stop paying attention.
+    out of no where and arrow comes streaking out of the sky...\r\n\r\n1. Get picked
+    off by an archer"
+  nextStates:
+  - {fileID: 11400000, guid: 92ed2f8fa02f8914083782f1abaec472, type: 2}
