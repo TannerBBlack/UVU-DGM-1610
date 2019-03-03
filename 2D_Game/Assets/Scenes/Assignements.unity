@@ -5890,8 +5890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9efcda1d227e356458a3a247451f12b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightColor: Green
+  lightColor: Red
   isUtahn: 0
+  coolPerson: Link
 --- !u!212 &2134673647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5962,6 +5963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe0eabbb755c4b4b9c511f0edd070cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  suspect: 
-  weapon: 
-  room: 
+  suspect: Jim
+  weapon: Gun
+  room: Bathroom

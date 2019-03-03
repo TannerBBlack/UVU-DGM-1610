@@ -6,6 +6,7 @@ public class IfStatement : MonoBehaviour {
 
     public string lightColor;
     public bool isUtahn;
+    public string coolPerson;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,46 @@ public class IfStatement : MonoBehaviour {
         else
         {
             print("I don't know that color...");
+        }
+        if(coolPerson == "Brian")
+        {
+            print("yeah, you're cool man");
+        }
+        else if(coolPerson == "Tanner")
+        {
+            print("you're the coolest of them all dude!");
+        }
+        else if(coolPerson == "Jim")
+        {
+            print("I gues you're alright...");
+        }
+        else if(coolPerson == "Bob")
+        {
+            print("KING BOB!!!!");
+        }
+        else if(coolPerson == "Davis")
+        {
+            print("you're just a clone of you're brother");
+        }
+        else if(coolPerson == "Josh")
+        {
+            print("you da man!");
+        }
+        else if(coolPerson == "Kirby")
+        {
+            print("hiiii!");
+        }
+        else if(coolPerson == "Link")
+        {
+            print("Hut, hut, hyat!");
+        }
+        else if(coolPerson == "Mario")
+        {
+            print("it's a me, Mario!");
+        }
+        else
+        {
+            print("you're not cool enough to be known");
         }
 	}
 	
