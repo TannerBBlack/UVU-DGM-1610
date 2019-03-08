@@ -6,7 +6,7 @@ public class ArraysLists : MonoBehaviour {
 
 	public int[] oddNumbers = {1, 3, 5, 7, 9};
     public string[] coolJoes = { "Bob", "Joe", "Tanner", "Yugi", "James"};
-   public bool[] didWeWin = {true, false};
+    public bool[] didWeWin = {true, false};
     public string[] dogs = {"Snouser", "Sheperd", "Lab", "Terrier"};
     public int[] evenNumbers = {2, 4, 6, 8, 10};
     public string[] videoGames = { "Legend of Zelda", "Startfox", "Halo", "Starcraft", "Valkyria Chronicles" };
@@ -15,9 +15,34 @@ public class ArraysLists : MonoBehaviour {
     public float[] funNumbers = { 2.8f, 3.7f, 4.4f };
     public string[] movies = { "Star Wars", "Shazam", "Lord of the Rings" };
 
-	// Use this for initialization
-	void Start () {
+    public List<string> winnersList = new List<string>();
+    public List<string> timeOfDay = new List<string>();
+    public List<string> shapes = new List<string>();
+    public List<string> legos = new List<string>();
+    public List<string> pictures = new List<string>();
+
+    public ArrayList somethingCool = new ArrayList();
+    public ArrayList colors = new ArrayList();
+    public ArrayList snowmen = new ArrayList();
+    public ArrayList n64Games = new ArrayList();
+    public ArrayList stuffedAnimals = new ArrayList();
+
+    // Use this for initialization
+    void Start () {
 		print(oddNumbers[2]);
+        winnersList.Add("Tanner");
+        timeOfDay.Add("noon");
+        shapes.Add("Circle");
+        shapes.Add("Of You");
+        legos.Add("2x4 brick");
+        pictures.Add("Mona Lisa");
+        somethingCool.Add("Piece of string");
+        colors.Add("Green");
+        snowmen.Add("Olaf");
+        n64Games.Add("Banjo Kazooie");
+        stuffedAnimals.Add("Sneaky");
+
+        print(n64Games[0]);
 	}
 	
 	// Update is called once per frame
