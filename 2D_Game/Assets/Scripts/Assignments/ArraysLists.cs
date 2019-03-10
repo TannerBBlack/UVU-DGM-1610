@@ -30,17 +30,38 @@ public class ArraysLists : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		print(oddNumbers[2]);
+
         winnersList.Add("Tanner");
+        winnersList.Add("Josh");
+        winnersList.Add("Davis");
         timeOfDay.Add("noon");
+        timeOfDay.Add("high noon");
+        timeOfDay.Add("midnight");
         shapes.Add("Circle");
         shapes.Add("Of You");
+        shapes.Add("triangle");
         legos.Add("2x4 brick");
+        legos.Add("2x2 brick");
+        legos.Add("2x3 brick");
         pictures.Add("Mona Lisa");
+        pictures.Add("St. George and the Dragon");
+        pictures.Add("Starry Sky");
+
         somethingCool.Add("Piece of string");
+        somethingCool.Add("Very old vest");
+        somethingCool.Add("Everything");
         colors.Add("Green");
+        colors.Add("Red");
+        colors.Add("Blue");
         snowmen.Add("Olaf");
+        snowmen.Add("Frosty");
+        snowmen.Add("Chill");
         n64Games.Add("Banjo Kazooie");
+        n64Games.Add("Majora's Mask");
+        n64Games.Add("Super Mario 64");
         stuffedAnimals.Add("Sneaky");
+        stuffedAnimals.Add("Spy");
+        stuffedAnimals.Add("Buffalo");
 
         print(n64Games[0]);
 	}
