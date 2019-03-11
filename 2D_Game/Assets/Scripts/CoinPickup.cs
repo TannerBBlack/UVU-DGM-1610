@@ -10,6 +10,7 @@ public class CoinPickup : MonoBehaviour {
         if(other.name == "Player"){
 
             print("You've Collected A Coin!");
+            ScoreManager.AddPoints(coinValue);
             Destroy(gameObject);
         }
     }
