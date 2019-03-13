@@ -5,13 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d938e85df355da44d9ee24f0e28a6be7
+  - enabled: 1
     path: Assets/Scenes/Assignements.unity
     guid: 004504d2b08cebe49b3203fb44acd673
-  - enabled: 1
-    path: Assets/Scenes/UdemyLearn.unity
-    guid: df8b58f31eb3ef54992a52a1b763a011
   m_configObjects: {}
