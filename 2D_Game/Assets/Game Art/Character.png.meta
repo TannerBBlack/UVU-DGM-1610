@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 0648c87610d265c4f9077753cdbe920e
+TextureImporter:
+  fileIDToRecycleName: {}
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.21354164, y: 0.72416836}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 118, y: 301, z: 693, w: 20}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones:
+    - name: root
+      position: {x: 216.56317, y: 529.6333, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6886019, w: 0.72513956}
+      length: 43.441998
+      parentId: -1
+    - name: bone_11
+      position: {x: 11.213077, y: 84.8522, z: 0}
+      rotation: {x: 0, y: 0, z: 0.18921742, w: 0.9819352}
+      length: 27.03088
+      parentId: 0
+    - name: bone_14
+      position: {x: 14.983907, y: -79.81121, z: 0}
+      rotation: {x: 0, y: 0, z: 0.19128844, w: 0.9815339}
+      length: 31.250622
+      parentId: 0
+    - name: bone_17
+      position: {x: -3.8894043, y: 0.7323194, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      length: 0
+      parentId: 0
+    - name: bone_3
+      position: {x: 43.442047, y: -0.000008910367, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0044215745, w: 0.9999902}
+      length: 24.729277
+      parentId: 0
+    - name: bone_12
+      position: {x: 27.03097, y: -0.000032446256, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0777196, w: 0.99697524}
+      length: 23.82438
+      parentId: 1
+    - name: bone_15
+      position: {x: 31.250628, y: 0.000005614951, z: 0}
+      rotation: {x: 0, y: 0, z: 0.051873423, w: 0.99865365}
+      length: 22.016624
+      parentId: 2
+    - name: bone_18
+      position: {x: 217.09361, y: 533.55536, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6595324, w: 0.75167614}
+      length: 45.64598
+      parentId: 3
+    - name: bone_4
+      position: {x: 24.729216, y: 0.000028616258, z: 0}
+      rotation: {x: 0, y: 0, z: 0.021285087, w: 0.99977344}
+      length: 21.807745
+      parentId: 4
+    - name: bone_13
+      position: {x: 23.824379, y: -0.0000048829897, z: 0}
+      rotation: {x: 0, y: 0, z: -0.10356211, w: 0.994623}
+      length: 10.166675
+      parentId: 5
+    - name: bone_16
+      position: {x: 22.016623, y: -0.0000032101752, z: 0}
+      rotation: {x: 0, y: 0, z: 0.00561258, w: 0.99998426}
+      length: 14.408922
+      parentId: 6
+    - name: bone_5
+      position: {x: 51.646503, y: 41.280396, z: 0}
+      rotation: {x: 0, y: 0, z: 0.020672815, w: 0.9997863}
+      length: 41.57292
+      parentId: 8
+    - name: bone_8
+      position: {x: 53.46711, y: -35.61123, z: 0}
+      rotation: {x: 0, y: 0, z: 0.02594791, w: 0.9996633}
+      length: 48.452866
+      parentId: 8
+    - name: bone_6
+      position: {x: 41.57292, y: -0.00003602074, z: 0}
+      rotation: {x: 0, y: 0, z: -0.005056718, w: 0.9999872}
+      length: 55.8551
+      parentId: 11
+    - name: bone_9
+      position: {x: 48.452904, y: -0.0000051024217, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0038717655, w: 0.9999925}
+      length: 50.786953
+      parentId: 12
+    - name: bone_7
+      position: {x: 55.855125, y: 0.000012416029, z: 0}
+      rotation: {x: 0, y: 0, z: 0.68196565, w: 0.7313842}
+      length: 23.235739
+      parentId: 13
+    - name: bone_10
+      position: {x: 50.78698, y: -0.00001812103, z: 0}
+      rotation: {x: 0, y: 0, z: 0.68446124, w: 0.72904927}
+      length: 22.551352
+      parentId: 14
+    spriteID: f5cd43beef8f3c4448b5e5800fbe836c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
