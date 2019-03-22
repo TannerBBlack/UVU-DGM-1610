@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 	public Transform groundCheck;
 	public float groundCheckRadius;
 	public LayerMask whatIsGround;
+    public float health;
 
 	// Use this for initialization
 	void Start () {
@@ -46,4 +47,9 @@ public class PlayerController : MonoBehaviour {
 	void Jump(){
 		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
 }
