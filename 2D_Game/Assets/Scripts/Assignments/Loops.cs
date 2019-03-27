@@ -15,9 +15,30 @@ public class Loops : MonoBehaviour
         //     print(i+" bottles of tylenol on the wall");
         // } 
 
-        while(bottles <= 100){
-            print(bottles+" bottles of tylenol on the wall");
-            bottles ++;
+        // while(bottles <= 100){
+        //     print(bottles+" bottles of tylenol on the wall");
+        //     bottles ++;
+        // }
+
+        // Do while loop
+        // bool shouldContinue = false;
+
+        // do
+        // {
+        //     print ("Hello Worl! XD");
+
+        // }while(shouldContinue == true);
+
+        // ForEach Loop
+        string[] strings = new string[3];
+
+        strings[0] = "First string";
+        strings[1] = "Second string";
+        strings[2] = "Third? string";
+
+        foreach (string item in strings)
+        {
+            print (item);
         }
     }
 
