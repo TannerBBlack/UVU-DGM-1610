@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
 	// Player movement variables
 	public float moveSpeed; 
 	public float jumpHeight;
+	private bool doubleJump;
 
 	//Player grounded variables
 	private bool grounded;
@@ -14,6 +15,12 @@ public class PlayerController : MonoBehaviour {
 	public float groundCheckRadius;
 	public LayerMask whatIsGround;
     public float health;
+
+	//Non-Slide Player 
+	private float moveVelocity;
+
+	//Animator
+
 
 	// Use this for initialization
 	void Start () {
@@ -29,11 +36,16 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		// Moves player left and right
 		if(Input.GetKey(KeyCode.D)){
-			GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			//GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			moveVelocity = moveSpeed;
 		}
-		if(Input.GetKey(KeyCode.A)){
-			GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+		else if(Input.GetKey(KeyCode.A)){
+			//GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			moveVelocity = -moveSpeed;
 		}
+		
+		//Moving left and right code
+		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);		
 
 		// Make player jump
 		if(Input.GetKeyDown(KeyCode.W) && grounded){
@@ -42,8 +54,16 @@ public class PlayerController : MonoBehaviour {
 
 		//Double Jump
 		if(grounded){
-		//	doubleJump = false;
+			doubleJump = false;
 		}
+
+		if(Input.GetKeyDown (KeyCode.W) && !doubleJump && !grounded){
+			Jump();
+			doubleJump = true;
+		}
+
+		//Non-Slide Player
+		moveVelocity = 0f;
 
 
 
