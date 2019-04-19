@@ -6,6 +6,9 @@ public class HurtScript : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        HealthBarScript.health -= 10f;
+        if (collision.tag == "Player")
+        {
+            HealthBarScript.health -= 10f;
+        }
     }
 }

@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public float moveSpeed; 
 	public float jumpHeight;
 	private bool doubleJump;
+    private Vector3 scale;
 
 	//Player grounded variables
 	private bool grounded;
@@ -26,8 +27,11 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         // Default to true on grounded
+        player = GetComponent<Animator>();
         player.SetBool("Walking", false);
         player.SetBool("Attacking", false);
+
+        scale = transform.localScale;
 		
 	}
 	
@@ -42,6 +46,7 @@ public class PlayerController : MonoBehaviour {
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = moveSpeed;
             player.SetBool("Walking", true);
+            transform.localScale = new Vector3(scale.x, scale.y, scale.z);
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
@@ -53,6 +58,7 @@ public class PlayerController : MonoBehaviour {
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = -moveSpeed;
             player.SetBool("Walking", true);
+            transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
@@ -79,6 +85,9 @@ public class PlayerController : MonoBehaviour {
 
 		//Non-Slide Player
 		moveVelocity = 0f;
+
+        
+
 
 
 

@@ -8,6 +8,7 @@ public class HealthBarScript : MonoBehaviour
     Image healthBar;
     float maxHealth = 100f;
     public static float health;
+    public LevelManager levelManager;
 
     // Start is called before the first frame update
     void Start()
@@ -20,5 +21,11 @@ public class HealthBarScript : MonoBehaviour
     void Update()
     {
         healthBar.fillAmount = health / maxHealth;
+
+        if(health <= 0)
+        {
+            levelManager.RespawnPlayer();
+            health = maxHealth;
+        }
     }
 }
