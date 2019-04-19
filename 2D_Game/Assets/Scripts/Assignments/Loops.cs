@@ -40,6 +40,16 @@ public class Loops : MonoBehaviour
         {
             print (item);
         }
+        string[] colors = new string[3];
+
+        colors[0] = "Red";
+        colors[1] = "Green";
+        colors[2] = "Blue";
+
+        foreach (string item in colors)
+        {
+            print(item);
+        }
     }
 
     // Update is called once per frame

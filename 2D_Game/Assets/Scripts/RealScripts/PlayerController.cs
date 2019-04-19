@@ -19,12 +19,15 @@ public class PlayerController : MonoBehaviour {
 	//Non-Slide Player 
 	private float moveVelocity;
 
-	//Animator
+    //Animator
+    public Animator player;
 
 
 	// Use this for initialization
 	void Start () {
-		// Default to true on grounded
+        // Default to true on grounded
+        player.SetBool("Walking", false);
+        player.SetBool("Attacking", false);
 		
 	}
 	
@@ -38,11 +41,23 @@ public class PlayerController : MonoBehaviour {
 		if(Input.GetKey(KeyCode.D)){
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = moveSpeed;
-		}
-		else if(Input.GetKey(KeyCode.A)){
+            player.SetBool("Walking", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            player.SetBool("Walking", false);
+        }
+
+
+        if (Input.GetKey(KeyCode.A)){
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = -moveSpeed;
-		}
+            player.SetBool("Walking", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.A))
+        {
+            player.SetBool("Walking", false);
+        }
 		
 		//Moving left and right code
 		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);		

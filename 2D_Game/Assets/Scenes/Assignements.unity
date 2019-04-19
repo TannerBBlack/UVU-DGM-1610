@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 416297713}
   - component: {fileID: 416297712}
   - component: {fileID: 416297711}
+  - component: {fileID: 416297716}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -216,11 +217,12 @@ MonoBehaviour:
   moveSpeed: 5
   jumpHeight: 10
   groundCheck: {fileID: 1853886845}
-  groundCheckRadius: 0
+  groundCheckRadius: 0.1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  health: 0
+  health: 50
+  player: {fileID: 0}
 --- !u!50 &416297712
 Rigidbody2D:
   serializedVersion: 4
@@ -255,18 +257,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.21520314, y: -0.10268879}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 1.56, y: 2.66}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.87837976, y: 2.375721}
   m_EdgeRadius: 0
 --- !u!212 &416297714
 SpriteRenderer:
@@ -305,8 +307,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.2210178, g: 0.8773585, b: 0.13656996, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2f3964c8e4e30bf4b861e88dd2a4fbc4, type: 3}
+  m_Color: {r: 0.9328547, g: 0.9528302, b: 0.9303578, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -324,14 +326,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416297710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.29, y: -0, z: 0}
-  m_LocalScale: {x: 3.5728, y: 3.5728, z: 3.5728}
+  m_LocalPosition: {x: 1.59, y: 0.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1853886845}
   - {fileID: 1874283395}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &416297716
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416297710}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8b1e2f47c8e72a34c87d32a51fa95275, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &575608814
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +457,7 @@ Transform:
   m_LocalScale: {x: 121.07783, y: 2.3962939, z: 2.3962939}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609278273
 GameObject:
@@ -468,19 +489,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7889956b5cb8e4498b21acb8a100898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 53
-  legs: 4
-  domesticated: 1
+  health: 0
+  legs: 0
+  domesticated: 0
   floppyEars: 0
-  fourLegs: 1
-  shortHair: 1
-  age: 3
-  weight: 12
-  maxSpeed: 5
-  furColor: Tan
+  fourLegs: 0
+  shortHair: 0
+  age: 0
+  weight: 0
+  maxSpeed: 0
+  furColor: 
   annoying: 1
-  bigEyes: 1
-  petName: Bob
+  bigEyes: 0
+  petName: 
 --- !u!212 &609278275
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -729,12 +750,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  moveRight: 1
+  moveRight: 0
   wallCheck: {fileID: 1447102475}
-  WallCheckRadius: 0.1
+  WallCheckRadius: 0.01
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 4352
+    m_Bits: 4096
   edgeCheck: {fileID: 1087073650}
 --- !u!50 &1070221793
 Rigidbody2D:
@@ -839,7 +860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070221791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.05, y: -0.35, z: 135.42865}
+  m_LocalPosition: {x: -4.05, y: -0.36, z: 135.42865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1447102475}
@@ -946,14 +967,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e881df9d1b2847d4c838353351e0bd57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glossy: 1
+  glossy: 0
   rare: 0
   cool: 0
-  continuous: 1
+  continuous: 0
   counter: 0
-  cardName: Mirror Wall
-  effect: Cut the attack points of each of your apponents monsters in half when they
-    attack
+  cardName: 
+  effect: 
 --- !u!212 &1092498284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1097,19 +1117,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cfbc7cf16ce344bbb82dd2b2973a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 75
-  legs: 4
+  health: 0
+  legs: 0
   domesticated: 0
-  tail: 1
+  tail: 0
   pointedEars: 0
-  shortHair: 1
+  shortHair: 0
   declawed: 0
-  size: 6.3
-  weight: 300
-  agility: 3.2
-  furColor: Orange
-  age: 7
-  banded: 1
+  size: 0
+  weight: 0
+  agility: 0
+  furColor: 
+  age: 0
+  banded: 0
 --- !u!114 &1120012462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,7 +1204,7 @@ Transform:
   m_LocalScale: {x: 9.978017, y: 9.978017, z: 9.978017}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142467293
 GameObject:
@@ -1280,7 +1300,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1240670349
 GameObject:
@@ -1332,10 +1352,10 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 416297715}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 5
+    OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -6241,7 +6261,7 @@ MonoBehaviour:
   m_ScreenY: 0.5
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.1
-  m_DeadZoneHeight: 0.48
+  m_DeadZoneHeight: 0.1
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
@@ -6487,13 +6507,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d5327ee76d25c4c8e152cf04ef30c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCheckPoint: {fileID: 1142467293}
+  currentCheckPoint: {fileID: 0}
   pcRigid: {fileID: 0}
-  deathParticles: {fileID: 2003866675947209878, guid: 3abd3bc759abd71448ba85d046684249,
-    type: 3}
+  deathParticles: {fileID: 0}
   respawnParticles: {fileID: 0}
-  respawnDelay: 2
-  pointPenaltyOnDeath: 10
+  respawnDelay: 0
+  pointPenaltyOnDeath: 0
 --- !u!1 &1794590266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6547,7 +6566,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6761,7 +6780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853886844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.097, z: 0}
+  m_LocalPosition: {x: -0.42, y: -1.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416297715}
@@ -6845,7 +6864,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1871990423
 MonoBehaviour:
@@ -6871,7 +6890,7 @@ GameObject:
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6982,7 +7001,7 @@ RectTransform:
   - {fileID: 952003016}
   - {fileID: 1795224046}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7158,7 +7177,7 @@ Transform:
   - {fileID: 1794590269}
   - {fileID: 1240670350}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134673645
 GameObject:
@@ -7193,9 +7212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9efcda1d227e356458a3a247451f12b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightColor: Red
+  lightColor: 
   isUtahn: 0
-  coolPerson: Link
+  coolPerson: 
 --- !u!212 &2134673647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7270,9 +7289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe0eabbb755c4b4b9c511f0edd070cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  suspect: Jim
-  weapon: Gun
-  room: Bathroom
+  suspect: 
+  weapon: 
+  room: 
 --- !u!114 &2134673650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7387,7 +7406,7 @@ PrefabInstance:
     - target: {fileID: 914614661110169835, guid: 31328a7cb9aab0249ab6f3f82520320f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 914614661110169835, guid: 31328a7cb9aab0249ab6f3f82520320f,
         type: 3}
