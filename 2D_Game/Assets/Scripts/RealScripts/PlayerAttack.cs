@@ -12,10 +12,13 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemies;
     public int damage;
 
+    public Animator player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GetComponent<Animator>();
+        player.SetBool("Attacking", false);
     }
 
     // Update is called once per frame
@@ -28,11 +31,17 @@ public class PlayerAttack : MonoBehaviour
             {
                 timeBetweenAttack = startTimeBetweenAtack;
 
+                player.SetBool("Attacking", true);
+
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<EnemyFollow>().TakeDamage(damage);
                 }
+            }
+            else if (Input.GetKeyUp(KeyCode.Space))
+            {
+                player.SetBool("Attacking", false);
             }
             
         }

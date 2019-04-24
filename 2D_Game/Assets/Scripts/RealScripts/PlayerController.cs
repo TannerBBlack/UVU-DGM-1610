@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
         // Default to true on grounded
         player = GetComponent<Animator>();
         player.SetBool("Walking", false);
-        player.SetBool("Attacking", false);
+        
 
         scale = transform.localScale;
 		
