@@ -7,6 +7,8 @@ public class EnemyFollow : MonoBehaviour
 
     public int health;
     public float speed;
+    private float dazedTime;
+    public float startDazedTime;
     private Transform target;
 
     // Start is called before the first frame update
@@ -27,11 +29,20 @@ public class EnemyFollow : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if(dazedTime <= 0){
+            speed = speed;
+        } 
+        else {
+            speed = 0;
+            dazedTime -= Time.deltaTime;
+        }
         
     }
 
     public void TakeDamage(int damage)
     {
+        dazedTime = startDazedTime;
         health -= damage;
         Debug.Log("damage taken");
     }
