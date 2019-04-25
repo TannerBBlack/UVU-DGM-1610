@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        // Default to true on grounded
+        
         player = GetComponent<Animator>();
         player.SetBool("Walking", false);
         

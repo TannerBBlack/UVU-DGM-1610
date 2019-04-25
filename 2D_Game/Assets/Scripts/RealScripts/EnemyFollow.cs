@@ -10,11 +10,15 @@ public class EnemyFollow : MonoBehaviour
     private float dazedTime;
     public float startDazedTime;
     private Transform target;
+    Rigidbody2D myRigidBody;
+    private Vector3 scale;
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        myRigidBody = GetComponent<Rigidbody2D>();
+        scale = transform.localScale;
     }
 
     // Update is called once per frame
@@ -31,12 +35,14 @@ public class EnemyFollow : MonoBehaviour
         }
 
         if(dazedTime <= 0){
-            speed = speed;
+            speed = 3;
         } 
         else {
             speed = 0;
             dazedTime -= Time.deltaTime;
         }
+
+        FlipSprite();
         
     }
 
@@ -45,5 +51,19 @@ public class EnemyFollow : MonoBehaviour
         dazedTime = startDazedTime;
         health -= damage;
         Debug.Log("damage taken");
+    }
+
+    private void FlipSprite()
+    {
+
+        if (speed > 0)
+        {
+            transform.localScale = new Vector3(scale.x, scale.y, scale.z);
+        }
+
+        else if(speed < 0)
+        {
+            transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
+        }
     }
 }
