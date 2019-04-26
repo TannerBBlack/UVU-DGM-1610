@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class HealthBarScript : MonoBehaviour
+public class HealthBarScript : MainMenu
 {
     Image healthBar;
     float maxHealth = 100f;
@@ -24,7 +25,7 @@ public class HealthBarScript : MonoBehaviour
 
         if(health <= 0)
         {
-            levelManager.RespawnPlayer();
+            SceneManager.LoadScene(levelToLoad);
             health = maxHealth;
         }
     }
