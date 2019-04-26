@@ -6,7 +6,7 @@ public class EnemyFollow : MonoBehaviour
 {
 
     public int health;
-    public float speed;
+    private float speed;
     private float dazedTime;
     public float startDazedTime;
     private Transform target;
@@ -35,7 +35,7 @@ public class EnemyFollow : MonoBehaviour
         }
 
         if(dazedTime <= 0){
-            speed = 3;
+            speed = 7;
         } 
         else {
             speed = 0;
