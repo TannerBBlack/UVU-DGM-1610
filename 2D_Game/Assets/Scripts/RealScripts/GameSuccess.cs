@@ -5,12 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class GameSuccess : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    [SerializeField] float LevelLoadDelay = 2f;
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
-        {
-            SceneManager.LoadScene(3);
-            Debug.Log("should win..");
-        }
+        StartCoroutine(LoadNextLevel());
+    }
+
+    IEnumerator LoadNextLevel()
+    {
+        yield return new WaitForSecondsRealtime(LevelLoadDelay);
+
+        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 }
